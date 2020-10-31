@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Lato');
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #888;
+}
+
+/*tabMenu*/
+#tabMenu {
+	position: relative;
+	box-shadow: 0 1px 3px #222;
+	z-index: 10;
+}
+/*header*/
+header {
+	position: relative;
+	line-height: 70px;
+	background-image: linear-gradient(#f0f0f0 60%, #c9c9c9);
+	z-index: 15
+}
+header .inner {
+	width: 960px;
+	margin: 0 auto;
+}
+header .inner .logo {
+	float: left;
+	font: bold 24px/70px 'Exo 2', sans-serif;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: #000;
+	transition: all 0.3s;
+}
+header .inner .logo:hover {
+	letter-spacing: 1px;
+	color: #005f91;
+}
+
+/*gnb*/
+.gnb {
+	float: right;
+	border-left: 1px solid #bbb;
+	box-shadow: inset 1px 0 #fff;
+}
+.gnb li  {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+.gnb li a {
+	display: block;
+	position: relative;
+	padding: 0 15px;
+	font-family: 'Exo 2', sans-serif;
+	transition: all 0.2s;
+}
+.gnb li a:hover,
+.gnb li a:focus,
+.gnb li a.on {
+	background: #222;
+	color: #fff;
+}
+.gnb li a.on:after {
+	background: url(../img/sprites.png) no-repeat;
+	content: '';
+	width: 38px;
+	height: 20px;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -19px;
+}
+
+/*contents*/
+.contents {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	background: #111;
+}
+.contents .bg {
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+}
+.contents .bg img {
+	width: 100%;
+	position: absolute;
+	top: 0; left: 0;
+}
+
+/*box*/
+.box {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+.box .inner {
+	position: absolute;
+	top: 150px;
+	width: 250px;
+	background: #fff;
+	padding: 20px 10px;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+}
+.box .inner h3 {
+	font-size: 25px;
+	color: #111;
+}
+.box .inner .text {margin: 10px 0;} 
+.box .inner .btnMore {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	background: #111;
+	margin-top: 10px;
+	width: 50px;
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	transition: all 0.3s
+}
+.box .inner .btnMore:hover {
+	width: 100px;
+}
+.box .inner .btnMore:after {
+	position: absolute;
+	left: 50px; top: 0;
+	content: '\f30b';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	opacity: 0;
+	transition: all 0.2s 0.4s;
+}
+.box .inner .btnMore:hover:after {
+	opacity: 0.8;
+	left: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

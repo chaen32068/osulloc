@@ -1,0 +1,420 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+
+
+/*공통*/
+body {
+	font: 15px 'Noto Sans KR', sans-serif;
+	color: #222;
+}
+h3 {
+	font-size: 33px;
+	font-weight: 300px;
+	letter-spacing: 12px;
+}
+
+.more {text-align: right; display: block;}
+.more span {font-weight: bold; letter-spacing: 2px; font-size: 13px; color: #626262;}
+.more i {margin-left: 10px; color: #898989; transition: all 0.3s;}
+.more i:hover {transform: rotate(800deg);}
+
+strong {
+	font-size: 25px; 
+	font-weight: bold;
+}
+
+.inner {
+	width: 1280px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+
+/*header*/
+#main-header {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	z-index: 50;
+}
+#main-header .inner .logo {
+	position: absolute;
+	top: 45px; left: 16%;
+}
+
+
+/*tnb*/
+#main-header .tnb {
+	position: absolute;
+	top: 25px; right: 16%;
+}
+#main-header .tnb li {
+	float: left;
+	margin-left: 15px;
+}
+#main-header .tnb li a {
+	position: relative;
+	display: block;
+	font-size: 12px;
+	color: #676767;
+}
+#main-header .tnb li a:after {
+	margin-left: 10px;
+	font-size: 11px;
+	color: #8e8e8e;
+	font-weight: lighter;
+}
+#main-header .tnb li:nth-child(1) a:after {content: '|';} 
+#main-header .tnb li:nth-child(2) a:after {content: '|';} 
+#main-header .tnb li:nth-child(3) a:after {content: '|';} 
+#main-header .tnb li:nth-child(4) a:after {content: '|';} 
+
+
+/*gnb*/
+#main-header .gnb {
+	position: absolute;
+	top: 66px; right: 16%;
+	
+}
+#main-header .gnb li {
+	float: left;
+	margin-left: 120px;
+}
+#main-header .gnb li:first-child {
+	margin-left: 0;
+}
+
+#main-header .gnb li a {
+	position: relative;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#main-header .gnb .sub-menu {
+	display: none;
+	
+}
+#main-header .gnb .sub-menu li a {
+	
+}
+
+
+/*main-visual*/
+#main-visual {
+	position: relative;
+	width: 100%; 
+	height: 100vh;
+	background: url(../img/img_re_main_slide_01_pc_200603.jpg) no-repeat 100% center / cover;
+}
+#main-visual .title-group {
+/*	position: absolute;
+	top: 50%; left: 0;*/
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	transform: translateY(200%);
+	display: inline-block;
+	text-align: center;
+	z-index: 100;
+	color: #fff;
+}
+#main-visual .title-group p {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+}
+#main-visual .title-group span {
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	display: inline-block;
+}
+#main-visual .title-group h2 {
+	font-size: 47px;
+	margin-top: 10px;
+}
+
+
+/*event*/
+/*#event {overflow: hidden;}*/
+#event .inner {
+	width: 1280px;
+	margin: 60px auto;
+}
+
+#event .event-title {
+	margin: 80px 0 0;
+	padding: 20px 0 0;
+}
+#event .event-title h3 {
+	margin-bottom: 20px;
+	margin-left: 44%;
+	text-align: center;
+	float: left;
+}
+
+#event .event-title .more span {
+	margin-top: 20px;
+	display: inline-block;
+}
+
+#event .event-group {
+	clear: both;
+	width: 100%;
+	margin-top: 40px;
+}
+#event .event-group li {
+	float: left;
+	box-sizing: border-box;
+	margin-right: 40px;
+	width: 400px;
+	display: inline-block;
+}
+#event .event-group li:last-child {margin-right: 0;}
+
+
+#event .event-group figure {
+	overflow: hidden;
+}
+#event .event-group figure img {
+	display: block;
+	background-image: contain;
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+#event .event-group figure img:hover {
+	transform: scale(1.1);
+	transition: all 0.6s;
+}
+#event .event-group .txt strong {
+	display: inline-block;
+	margin: 30px 0 10px;
+}
+#event .event-group .txt p {
+	word-break: keep-all;
+	margin-bottom: 10px;
+	color: #4e4e4e;
+}
+#event .event-group .txt time {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #8e8e8e;}
+
+
+/*news*/
+#notice .inner {
+	clear: both;
+	width: 1280px;
+	margin-top: 80px;
+	padding-top: 30px;
+}
+#notice .news-area {
+	float: left;
+	width: 590px;
+	margin-right: 100px;
+}
+.title {
+	height: 70px;
+	border-bottom: 2px solid #222;
+}
+h3 {
+	display: inline-block;
+}
+.more {
+	float: right;
+	display: inline-block;
+	margin-top: 15px;
+}
+#notice .news-area li + li {
+	padding: 0 30px ;
+	height: 110px;
+	line-height: 110px;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: 600;
+}
+#notice .news-area li + li > time {
+	float: right;
+	font-size: 13px;
+	font-weight: 600;
+	color: #898989;
+}
+
+
+/*story*/
+
+#notice .story-area {
+	float: left;
+	width: 590px;
+}
+#notice .story-area .title {
+	border: none;
+}
+#notice .story-area img {
+	display: block;
+	width: 100%;
+}
+#notice .story-area strong {
+	display: block;
+	margin-top: 30px;
+}
+#notice .story-area p {
+	margin: 20px 0;
+	line-height: 25px;
+	word-break: keep-all;
+	color: #4e4e4e;
+}
+
+
+/*moments*/
+#moments .inner {
+	display: block;
+	margin: 40px auto;
+	height: 500px;
+}
+#moments .inner h3 {
+	width: 100%;
+	margin: 40px 0;
+	text-align: center;
+	letter-spacing: normal;
+}
+#moments .inner ul li {
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+#moments .inner ul li:last-child {
+	margin-right: 0;
+}
+
+#moments .inner figure {
+	position: relative;
+	float: left;
+	width: 312px;
+	height: 312px;
+}
+#moments .inner figure:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	border: 5px solid transparent;
+	box-sizing: border-box;
+
+}
+#moments .inner figure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+#moments .inner figure:hover:before {
+	border: 5px solid orange;
+}
+
+
+/*membership*/
+#membership .inner {
+	position: relative;
+	margin-top: 60px;
+	width: 100%;
+	height: 600px;
+	background: #183029;
+}
+#membership .inner .text-area {
+	float: left;
+	position: absolute;
+	top: 110px; left: 300px;
+	width: 500px;
+	box-sizing: border-box;
+	color: #fff;
+	word-spacing: 2px;
+}
+#membership .inner .text-area > span {
+	display: block;
+	padding-bottom: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 10px;
+	color: #537c70;
+}
+#membership .inner .text-area h2 {
+	padding: 20px 0;
+	font-size: 40px;
+	font-weight: bold;
+}
+#membership .inner .text-area p {
+	line-height: 2.3;
+}
+#membership .inner .more {
+	position: absolute;
+	bottom: 0; left: 34.8%;
+	width: 280px;
+	height: 80px;
+	display: inline-block;
+	background: #0b1915;
+}
+#membership .inner .more span {
+	position: relative;
+	top: 30px; right: 50px;
+	font-size: 17px;
+	font-weight: normal;
+	letter-spacing: 0;
+	color: #fff;
+}
+#membership .inner .more i {
+	position: relative;
+	top: 30px; right: 40px;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+#membership .inner .img-area {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

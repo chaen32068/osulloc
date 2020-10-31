@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Sunflower:wght@500;700&display=swap');
+
+body {
+	background: url(../img/wood_bg.jpg) fixed;
+	font: 15px/1 'Sunflower', sans-serif;
+	color: #fff;
+}
+/*header*/
+header {
+	width: 750px;
+	margin: 100px auto;
+}
+header h1 {
+	font-size: 45px;
+	text-align: center;
+	text-shadow: 2px 2px #111;
+}
+
+/*tab*/
+.tab {
+	width: 750px;
+	margin: auto;
+}
+.tab-menu {}
+.tab-menu > a {
+	display: block;
+	float: left;
+	position: relative;
+	padding: 15px 30px;
+	margin-right: 5px;
+	border-radius: 7px 7px 0 0;
+	background: #eee;
+	color: #333;
+	font-size: 16px;
+	font-weight: 500;
+	transition: all 0.3s;
+}
+.tab-menu > a:hover {
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.tab-menu > a:focus,
+.tab-menu > a.on {
+	padding-left: 40px;
+	padding-right: 20px;
+	background: #fff;
+}
+.tab-menu > a:after {
+	position: absolute;
+	left: 35%; top: 50%;
+	margin-top: -12px;
+	opacity: 0;
+	transition: all 0.2s
+}
+.tab-menu > a:nth-child(1):after {
+	content: url(../img/clock-icon.png)
+}
+.tab-menu > a:nth-child(2):after {
+	content: url(../img/weather-icon.png)
+}
+.tab-menu > a:nth-child(3):after {
+	content: url(../img/calendar-icon.png)
+}
+.tab-menu > a:nth-child(4):after {
+	content: url(../img/chart_pie-icon.png)
+}
+.tab-menu > a:nth-child(5):after {
+	content: url(../img/chat-icon.png)
+}
+.tab-menu > a:hover:after,
+.tab-menu > a:focus:after,
+.tab-menu > a.on:after {
+	left: 15%;
+	opacity: 1
+}
+
+.tab-con {
+	position: relative;
+	padding: 30px;
+	height: 130px;
+	border-radius: 7px;
+	border-top-left-radius: 0;
+	box-shadow: 5px 5px 5px rgba(17,17,17,0.5);
+	overflow: hidden;
+	background: #fff;
+	color: #142d4a;
+}
+.tab-con section {
+	position: absolute;
+	left: 20px; top: 30px;
+	width: 95%;
+	border-bottom: dashed 1px #666;
+	padding-bottom: 10px;
+	background: #fff;
+}
+.tab-con section.on {
+	z-index: 1
+}
+.tab-con img {
+	float: left;
+	margin-right: 10px;
+}
+.tab-con h3 {
+	font-family: 'Noto Sans KR', sans-serif;
+	margin-bottom: 10px;}
+.tab-con p {line-height: 1.3;}
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+body {
+	background: cadetblue;
+	font: 15px 'Noto Sans KR', sans-serif;
+	color: #888;
+}
+
+
+
+.tabs li a:hover,
+.tabs li a.on {
+	color: #222;
+}
+.tabs li a.on {cursor: default;}
+
+/*panels*/
+.panels {
+	background-color: #fff;
+	min-height: 180px; /*최소 180px 이상의 높이를 유지*/
+}
+.panel {padding: 15px; font-size: 14px; color: #888}
+
+
+
+/*tabs*/
+.tabs {
+	
+}
+.tabs li {
+	
+}
+.tabs li a {
+	display: block;
+	padding: 5px 15px;
+	margin: 0 10px;
+	color: #a1a1a1;
+	font-weight: 500;	
+	display: none;
+}
+
+
+
+
+
+
+
+/*best*/
+.best {
+	width: 100%;
+	height: 750px;
+}
+.tabset {
+	overflow: hidden;
+	width: 1400px;
+	margin: 0 auto;
+}
+
+/*tabs*/
+.tabs {
+	overflow: hidden;
+	padding: 15px 20px 0;
+	background: red;
+	width: 1400px;
+	margin: 40px 0;
+}
+.tabs li {
+	float: right;
+	height: 50px;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.tabs li a {
+	display: block;
+	padding: 5px 15px;
+	margin: 0 10px;
+	color: #a1a1a1;
+	font-weight: 500;	
+	display: none;
+}
+.panels .img_box {
+	float: left;
+	width: 350px;
+	height: 600px;
+	display: block;
+	border-top: 2px solid #ececec;
+}
+.panels .img_box .bf {
+	overflow: hidden;
+	position: relative;
+	width: 304px;
+	height: 340px;
+	margin: 0 50px;
+	background: #fdfdfd;
+	cursor: pointer;
+}
+.panels .img_box .first {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+.panels .img_box .bf .last {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	opacity: 0;
+	background: #fdfdfd;
+	transition: all 0.5s;
+}
+.panels .img_box .bf:hover .last {
+	opacity: 1;
+}
+.panels .img_box .txt {
+	overflow: hidden;
+	width: 304px;
+	height: 200px;
+	margin: 20px 50px 0;
+}
+.panels .img_box .txt > img {
+	display: block;
+	margin: 10px;
+}
+.panels .img_box .txt a {
+	display: block;
+	margin: 10px;
+	box-sizing: border-box;
+	line-height: 50px;
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #555;
+}
+.panels .img_box .txt p {
+	margin: 10px;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+.panels .img_box .txt .like {
+	display: inline-block;
+	margin: 20px 0px;
+}
+.panels .img_box .txt .like img {
+	margin-left: 10px;
+}
+.panels .img_box .txt .like span {
+	margin-left: 10px;
+	font-size: 18px;
+	color: #bcbcbc;
+}
+.panels .img_box .txt .cmt {
+	display: inline-block;
+	margin-left: 30px;
+}
+.panels .img_box .txt .cmt span {
+	margin-left: 10px;
+	font-size: 18px;
+	color: #bcbcbc;
+}
+
+

@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url(fonts.css);
+
+body {
+	padding: 60px;
+	background: #f4f4f4;
+	font: 15px 'Noto Sans KR', sans-serif;
+	color: #888;
+}
+/*all*/
+.all {width: 760px; margin: auto}
+
+/*tabset*/
+.tabset {margin-bottom: 30px;}
+
+/*tabs*/
+.tabs {
+	overflow: hidden;
+	padding: 15px 20px 0;
+	background: #1f4029;
+}
+.tabs li {
+	float: left;
+	padding: 0 2px 0 0;
+}
+.tabs li a {
+	display: block;
+	background-color: #429042;
+	padding: 5px 15px;
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+	font-weight: 500;	
+	display: none;
+}
+.tabs li a:hover,
+.tabs li a.on {
+	background: #fff;
+	color: #222;
+}
+.tabs li a.on {cursor: default;}
+
+/*panels*/
+.panels {
+	background-color: #fff;
+	min-height: 180px; /*최소 180px 이상의 높이를 유지*/
+}
+.panel {padding: 15px; font-size: 14px; color: #888}
+
+
+
+
+
+
+
